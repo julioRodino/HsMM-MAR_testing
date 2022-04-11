@@ -22,8 +22,8 @@ Most scripts are arranged in sections:
 
 Scripts:
 
-1. pipeline_hsmm_example_MAR.m - This pipeline uses the concatenated data from multiple subjects. This includes the structural connectivity matrix. Preprocessing: Downsamples to 200 Hz. Filters from 1-30 Hz. Standardize data (z-score) per subject (this actually happens at the concatenation step in the subjcat function). If it takes too much RAM. The number of subjects analyzed (concatenated files) can be changes by specifying a fixed number in the concatenation function. Like so:
+pipeline_hsmm_example_MAR.m - This pipeline uses the concatenated data from multiple subjects. This includes the structural connectivity matrix. Preprocessing: Downsamples to 200 Hz. Filters from 1-30 Hz. Standardize data (z-score) per subject (this actually happens at the concatenation step in the subjcat function). If it takes too much RAM. The number of subjects analyzed (concatenated files) can be changes by specifying a fixed number in the concatenation function. Like so:
 
-  `data_container.eeg_rest = subjcat(files(1:3),1))`
+ `data_container.eeg_rest = subjcat(files(1:3),1))`
 
-  This will concatenate files 1 to 3 instead of every .mat file in the folder.
+This will concatenate files 1 to 3 instead of every .mat file in the folder.
